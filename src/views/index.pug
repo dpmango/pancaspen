@@ -1,0 +1,318 @@
+doctype html
+html
+  include shared/head.pug
+
+  body
+    include shared/header.pug
+
+    .app
+      // SIDEBAR MENU (PUSH)
+      .sidebar
+        .sidebar__scrollable
+          .sidebar__wrapper
+            // head
+            .sidebar__head
+              .sidebar__head__profile-pic
+                img(src="images/sidebarProfile.png")
+              .sidebar__head__profile-desc
+                .sidebar__head__username Юля
+                .sidebar__head__age 19 лет
+                .sidebar__head__status.sidebar__head__status--vip VIP
+            .sidebar__head-btn
+              a(href='#').btn.btn--blue.btn--fill.btn--block Моя анкета
+            //menu
+            .sidebar__menu
+              a(href="#").sidebar__menu__link
+                .sidebar__menu__link__ico-wrap
+                  i.ico.ico-sidebar-search
+                span Поиск
+              a(href="#").sidebar__menu__link
+                .sidebar__menu__link__ico-wrap
+                  i.ico.ico-sidebar-messages
+                span Сообщения
+                i.ico.ico-sidebar-messages-cout 2
+              a(href="#").sidebar__menu__link
+                .sidebar__menu__link__ico-wrap
+                  i.ico.ico-sidebar-eye
+                span Кто смотрел
+              a(href="#").sidebar__menu__link
+                .sidebar__menu__link__ico-wrap
+                  i.ico.ico-sidebar-newletter
+                span Рассылка
+              a(href="#").sidebar__menu__link
+                .sidebar__menu__link__ico-wrap
+                  i.ico.ico-sidebar-crown
+                span Купить VIP
+              a(href="#").sidebar__menu__link
+                .sidebar__menu__link__ico-wrap
+                  i.ico.ico-sidebar-top
+                span Закрепить в ТОП
+              a(href="#").sidebar__menu__link
+                .sidebar__menu__link__ico-wrap
+                  i.ico.ico-sidebar-promote
+                span Поднять анкету
+              a(href="#").sidebar__menu__link.sidebar__menu__link--muted
+                .sidebar__menu__link__ico-wrap
+                  i.ico.ico-sidebar-settings
+                span Настройки
+              a(href="#").sidebar__menu__link.sidebar__menu__link--muted
+                .sidebar__menu__link__ico-wrap
+                  i.ico.ico-sidebar-contact
+                span Обратная связь
+              a(href="#").sidebar__menu__link.sidebar__menu__link--muted
+                .sidebar__menu__link__ico-wrap
+                  i.ico.ico-sidebar-logout
+                span Выход
+
+
+      // CONTENT HOLDER (PULL)
+      .content
+        // HERO ::START
+        .hero
+          .hero__wrapper
+            .hero__title Сервис поиска содержанок и спонсоров <span>Богатые мужчины ищут красивых девушек здесь</span>
+            .hero__form
+              form(action="")
+                .ui-group
+                  .ui-dropdown
+                    .ui-dropdown__visible.selected
+                      span Девушку
+                      i.ico.ico-gender
+                    .ui-dropdown__select
+                      .ui-dropdown__select__option(data-value="Девушку")
+                        i.ico.ico-drop-girl
+                        span Девушку
+                      .ui-dropdown__select__option(data-value="Мужчину")
+                        i.ico.ico-drop-man
+                        span Мужчину
+                  .ui-dropdown
+                    .ui-dropdown__visible
+                      span Город
+                      i.ico.ico-location
+                    .ui-dropdown__select.ui-dropdown__select--regions
+                      .ui-dropdown__select__option(data-value="Санкт-Петербург, Росcия")
+                        span Санкт-Петербург, <span>Росcия</span>
+                      .ui-dropdown__select__option(data-value="Санкт-Петербург, Росcия")
+                        span Санкт-Петербург, <span>Росcия</span>
+                      .ui-dropdown__select__option(data-value="Санкт-Петербург, Росcия")
+                        span Санкт-Петербург, <span>Росcия</span>
+
+                  .ui-dropdown.ui-dropdown--short
+                    .ui-dropdown__visible
+                      span от 18 лет
+                      i.ico.ico-calendar
+                    .ui-dropdown__select
+                      .ui-dropdown__select__option(data-value="18 лет")
+                        span 18 лет
+                      .ui-dropdown__select__option(data-value="19 лет")
+                        span 19 лет
+                      .ui-dropdown__select__option(data-value="20 лет")
+                        span 20 лет
+                      .ui-dropdown__select__option(data-value="21 год")
+                        span 21 год
+                      .ui-dropdown__select__option(data-value="22 года")
+                        span 22 года
+                      .ui-dropdown__select__option(data-value="23 лет")
+                        span 23 лет
+                      .ui-dropdown__select__option(data-value="24 лет")
+                        span 24 лет
+                      .ui-dropdown__select__option(data-value="25 год")
+                        span 25 год
+
+                  .ui-dropdown.ui-dropdown--short
+                    .ui-dropdown__visible
+                      span 55+ лет
+                      i.ico.ico-calendar
+                    .ui-dropdown__select
+                      .ui-dropdown__select__option(data-value="18 лет")
+                        span 18 лет
+                      .ui-dropdown__select__option(data-value="19 лет")
+                        span 19 лет
+                      .ui-dropdown__select__option(data-value="20 лет")
+                        span 20 лет
+                      .ui-dropdown__select__option(data-value="21 год")
+                        span 21 год
+                      .ui-dropdown__select__option(data-value="22 года")
+                        span 22 года
+                      .ui-dropdown__select__option(data-value="23 лет")
+                        span 23 лет
+                      .ui-dropdown__select__option(data-value="24 лет")
+                        span 24 лет
+                      .ui-dropdown__select__option(data-value="25 год")
+                        span 25 год
+            .hero__cta
+              button.btn.btn--hero
+                i.ico.ico-search
+                span Найти
+
+        // LISTINGS ::START
+        .listings
+          .container
+            .heading Новые девушки
+            .heading-line
+              i.ico.ico-girl
+
+            .listings__wrapper
+              // card
+              .listings__card
+                a(href="#").listings__card__image
+                  img(src="images/cardImg.png")
+                .listings__card__info
+                  a(href="#").listings__card__info__name
+                    span Кристина, 24
+                    i.ico.ico-verified
+                  .listings__card__info__location Санкт-Петербург
+                .listings__card__cta
+                  a(href='#').btn.btn--primary
+                    i.ico.ico-envelope-green
+                    span Написать
+              // card
+              .listings__card
+                a(href="#").listings__card__image
+                  img(src="images/cardImg.png")
+                .listings__card__info
+                  a(href="#").listings__card__info__name
+                    span Кристина, 24
+                    i.ico.ico-verified
+                  .listings__card__info__location Санкт-Петербург
+                .listings__card__cta
+                  a(href='#').btn.btn--primary
+                    i.ico.ico-envelope-green
+                    span Написать
+              // card
+              .listings__card
+                a(href="#").listings__card__image
+                  img(src="images/cardImg.png")
+                .listings__card__info
+                  a(href="#").listings__card__info__name
+                    span Кристина, 24
+                    i.ico.ico-verified
+                  .listings__card__info__location Санкт-Петербург
+                .listings__card__cta
+                  a(href='#').btn.btn--primary
+                    i.ico.ico-envelope-green
+                    span Написать
+
+              // card
+              .listings__card
+                a(href="#").listings__card__image
+                  img(src="images/cardImg.png")
+                .listings__card__info
+                  a(href="#").listings__card__info__name
+                    span Кристина, 24
+                    i.ico.ico-verified
+                  .listings__card__info__location Санкт-Петербург
+                .listings__card__cta
+                  a(href='#').btn.btn--primary
+                    i.ico.ico-envelope-green
+                    span Написать
+              // card
+              .listings__card
+                a(href="#").listings__card__image
+                  img(src="images/cardImg.png")
+                .listings__card__info
+                  a(href="#").listings__card__info__name
+                    span Кристина, 24
+                    i.ico.ico-verified
+                  .listings__card__info__location Санкт-Петербург
+                .listings__card__cta
+                  a(href='#').btn.btn--primary
+                    i.ico.ico-envelope-green
+                    span Написать
+              // card
+              .listings__card
+                a(href="#").listings__card__image
+                  img(src="images/cardImg.png")
+                .listings__card__info
+                  a(href="#").listings__card__info__name
+                    span Кристина, 24
+                    i.ico.ico-verified
+                  .listings__card__info__location Санкт-Петербург
+                .listings__card__cta
+                  a(href='#').btn.btn--primary
+                    i.ico.ico-envelope-green
+                    span Написать
+
+            .listings__cta
+              a(href="#").btn.btn--blue Все девушки
+
+        // MAN LISTINGS ::START
+        .listings
+          .container
+            .heading Новые спонсоры
+            .heading-line
+              i.ico.ico-man
+
+            .listings__wrapper
+              // card
+              .listings__card
+                a(href="#").listings__card__image
+                  img(src="images/cardImg.png")
+                .listings__card__info
+                  a(href="#").listings__card__info__name
+                    span Кристина, 24
+                    i.ico.ico-verified
+                  .listings__card__info__location Санкт-Петербург
+                .listings__card__cta
+                  a(href='#').btn.btn--primary
+                    i.ico.ico-envelope-green
+                    span Написать
+              // card
+              .listings__card
+                a(href="#").listings__card__image
+                  img(src="images/cardImg.png")
+                .listings__card__info
+                  a(href="#").listings__card__info__name
+                    span Кристина, 24
+                    i.ico.ico-verified
+                  .listings__card__info__location Санкт-Петербург
+                .listings__card__cta
+                  a(href='#').btn.btn--primary
+                    i.ico.ico-envelope-green
+                    span Написать
+              // card
+              .listings__card
+                a(href="#").listings__card__image
+                  img(src="images/cardImg.png")
+                .listings__card__info
+                  a(href="#").listings__card__info__name
+                    span Кристина, 24
+                    i.ico.ico-verified
+                  .listings__card__info__location Санкт-Петербург
+                .listings__card__cta
+                  a(href='#').btn.btn--primary
+                    i.ico.ico-envelope-green
+                    span Написать
+
+            .listings__cta
+              a(href="#").btn.btn--blue Все спонсоры
+
+        // ABOUT ::START
+        .about
+          .heading О сервисе - Pancaspen
+          .heading-line
+            i.ico.ico-info
+          .about__wrapper
+            p Когда мужчина решает найти себе содержанку, он четко уверен в своем выборе и подходит к данному вопросу тщательно и щепетильно. Как правило, это успешные, уверенные в себе мужчины, которым хочется отдохнуть от любовниц, девушек по вызову, жен. Часто бывают случаи, когда мужчина расстался с девушкой и хочет залечить раны столь чудодейственным способом. Найти содержанку в Москве достаточно просто, но следует помнить, что к ним нужен определенный подход.
+
+            p Отношения по расчету помогают мужчинам расслабиться от изматывающей работы и помогают в тех случаях, когда на другие отношения просто не хватает времени.
+
+            p Содержанки и спонсоры активно развиваются в качестве современных отношений, в которых все дозволено и обговорено. При этом отношения открыты, мужчины и женщины друг другу диктуют свои условия, получая желаемое и наслаждаясь этим.
+
+        // ARTICLES ::START
+        .articles
+          .articles__wrapper
+            .articles__left
+              img(src="images/devushka-paren-vechernee.png")
+            .articles__right
+              .heading Почитать
+              .heading-line
+                i.ico.ico-read
+
+              .articles__slider
+                .article
+                  .article__name Название статьи
+                  .article__content Отношения по расчету помогают мужчинам расслабиться от изматывающей работы и помогают в тех случаях, когда на другие отношения просто не хватает времени.
+                  a(href="#").btn.btn--blue Читать дальше
+
+    include shared/footer.pug

@@ -1,0 +1,66 @@
+// buttons
+.btn
+  display: inline-block
+  text-align: center
+  -webkit-appearance: none
+  transition: all .4s
+  &:focus, &:active
+    outline: none
+
+  &--block
+    display: block
+
+  &--hero
+    background: $colorOrange
+    color: white
+    font-size: 21px
+    font-weight: 600
+    min-width: 230px
+    border-radius: 30px
+    height: 55px
+    border: none
+    padding: 10px 30px
+    box-shadow: inset 0 0 4px 0px color(black a(30%))
+    cursor: pointer
+    span
+      margin-left: 15px
+    .ico
+      vertical-align: -3px
+    &:hover
+      background: $colorPink
+      box-shadow: none
+
+  &--primary
+    border: 1px solid $colorGreen
+    border-radius: 4px
+    font-size: 15px
+    font-weight: 600
+    color: $colorGreen
+    min-width: 200px
+    padding: 10px 20px
+    .ico
+      margin-right: 10px
+      vertical-align: 0px
+    &:hover
+      color: white
+      background: $colorGreen
+      .ico-envelope-green
+        background-image: url(../images/sprite/ico-envelope@2x.png)
+
+  &--blue
+    border: 1px solid $colorBlue
+    border-radius: 4px
+    font-size: 15px
+    font-weight: 600
+    color: $colorBlue
+    min-width: 200px
+    padding: 10px 20px
+    &:hover
+      color: white
+      background: $colorBlue
+    &.btn--fill
+      background: $colorBlue
+      color: white
+      &:hover
+        color: $colorBlue
+        background: transparent

@@ -1,0 +1,168 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-ico-calendar@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -128px -96px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ico-crown@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -95px -128px;
+  width: 32px;
+  height: 28px;
+}
+.icon-ico-drop-girl@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -136px 0px;
+  width: 30px;
+  height: 47px;
+}
+.icon-ico-drop-man@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -40px -48px;
+  width: 40px;
+  height: 46px;
+}
+.icon-ico-envelope-green@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -166px -54px;
+  width: 30px;
+  height: 22px;
+}
+.icon-ico-envelope@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -166px -32px;
+  width: 30px;
+  height: 22px;
+}
+.icon-ico-eye@2x {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -159px;
+  width: 32px;
+  height: 20px;
+}
+.icon-ico-gender@2x {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -96px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ico-girl@2x {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 48px;
+  height: 48px;
+}
+.icon-ico-info@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -92px 0px;
+  width: 44px;
+  height: 45px;
+}
+.icon-ico-location@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -96px -96px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ico-man@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -48px 0px;
+  width: 44px;
+  height: 48px;
+}
+.icon-ico-read@2x {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -48px;
+  width: 40px;
+  height: 48px;
+}
+.icon-ico-search@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -80px -48px;
+  width: 40px;
+  height: 42px;
+}
+.icon-ico-sidebar-contact@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -166px -98px;
+  width: 20px;
+  height: 30px;
+}
+.icon-ico-sidebar-crown@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -31px -128px;
+  width: 32px;
+  height: 28px;
+}
+.icon-ico-sidebar-eye@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -32px -159px;
+  width: 32px;
+  height: 20px;
+}
+.icon-ico-sidebar-logout@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -166px 0px;
+  width: 30px;
+  height: 32px;
+}
+.icon-ico-sidebar-messages@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -166px -76px;
+  width: 30px;
+  height: 22px;
+}
+.icon-ico-sidebar-newletter@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -127px -128px;
+  width: 32px;
+  height: 24px;
+}
+.icon-ico-sidebar-promote@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -63px -128px;
+  width: 32px;
+  height: 28px;
+}
+.icon-ico-sidebar-search@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -136px -47px;
+  width: 30px;
+  height: 32px;
+}
+.icon-ico-sidebar-settings@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -64px -96px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ico-sidebar-top@2x {
+  background-image: url(../images/sprite.png);
+  background-position: -32px -96px;
+  width: 32px;
+  height: 32px;
+}
+.icon-ico-verified@2x {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -128px;
+  width: 31px;
+  height: 31px;
+}
