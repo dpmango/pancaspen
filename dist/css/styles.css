@@ -1359,6 +1359,11 @@ body, html {
     font-weight: 700;
     -webkit-box-flex: 0;
 }
+@media(max-width: 414px) {
+    .header__logo {
+        display: none;
+    }
+}
 .header__navi {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1485,6 +1490,11 @@ body, html {
     border-color: #7596e9;
     background: #6286e2;
 }
+@media(max-width: 414px) {
+    .header__notification {
+        display: none;
+    }
+}
 .header__messages {
     position: relative;
     margin-left: -1px;
@@ -1505,6 +1515,16 @@ body, html {
 .header__messages:hover {
     border-color: #7596e9;
     background: #6286e2;
+}
+@media(max-width: 414px) {
+    .header__messages {
+        margin-right: -15px;
+    }
+    .header__messages .ico {
+        -webkit-transform: scale(1.4);
+            -ms-transform: scale(1.4);
+                transform: scale(1.4);
+    }
 }
 .header__registration {
     position: relative;
