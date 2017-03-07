@@ -49,7 +49,9 @@
 .ico-info
   background-image: url(../images/sprite/ico-info@2x.png)
   size: 22px 23px
-
+.ico-padlock
+  background-image: url(../images/sprite/ico-padlock@2x.png)
+  size: 19px 24px
 .ico-read
   background-image: url(../images/sprite/ico-read@2x.png)
   size: 20px 24px
@@ -100,3 +102,21 @@
   font-size: 12px
   padding: 2px 7px
   border-radius: 15px
+
+.ico-next, .ico-prev
+  background-image: url('../images/sprite/ico-arrow-nav@2x.png')
+  size: 13px 24px
+  position: absolute
+  top: 2px
+  z-index: 3
+  padding: 10px
+  cursor: pointer
+  transition: all .4s ease
+  &:hover
+    opacity: .6
+
+.ico-next
+  right: -5px
+.ico-prev
+  left: -5px
+  transform: rotate(180deg)

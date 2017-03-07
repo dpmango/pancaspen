@@ -31,6 +31,7 @@
     "postcss-color-function": "^2.0.1",
     "postcss-color-rgba-fallback": "^2.2.0",
     "postcss-cssnext": "^2.9.0",
+    "postcss-csso": "^1.1.2",
     "postcss-flexbugs-fixes": "^2.1.0",
     "postcss-inline-svg": "^2.3.0",
     "postcss-opacity": "^4.0.0",

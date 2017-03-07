@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Pansapen</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
     <meta name="description" keywords="">
   </head>
   <body>
@@ -16,7 +14,12 @@
         <button class="hamburger hamburger--3dy" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
         <div class="header__logo"><a href="#">Pancaspen.ru</a></div>
         <div class="header__navi">
-          <div class="header__navi__item header__place">Ваша анкета на <span>27 месте</span> <a href='#'>поднять</a></div><a class="header__navi__item header__payed" href="#"><i class="ico ico-crown"></i><span>23 дня</span></a><a class="header__navi__item header__notification" href="#"><i class="ico ico-eye"></i></a><a class="header__navi__item header__messages" href="#"><i class="ico ico-envelope"></i><i class="ico ico-unread"></i></a>
+          <div class="header__navi__item header__place">Ваша анкета на <span>27 месте</span> <a href='#'>поднять</a></div>
+          <div class="header__navi__item header__payed"><i class="ico ico-crown"></i><span>23 дня</span>
+            <div class="header__payed__drop">
+              <div class="header__payed__drop__wrap"><a href="#">Продлить</a></div>
+            </div>
+          </div><a class="header__navi__item header__notification" href="#"><i class="ico ico-eye"></i></a><a class="header__navi__item header__messages" href="#"><i class="ico ico-envelope"></i><i class="ico ico-unread"></i></a>
         </div>
       </div>
     </header>
@@ -66,12 +69,9 @@
                       <div class="ui-dropdown__select__option" data-value="Мужчину"><i class="ico ico-drop-man"></i><span>Мужчину</span></div>
                     </div>
                   </div>
-                  <div class="ui-dropdown">
-                    <div class="ui-dropdown__visible"><span>Город</span><i class="ico ico-location"></i></div>
-                    <div class="ui-dropdown__select ui-dropdown__select--regions">
-                      <div class="ui-dropdown__select__option" data-value="Санкт-Петербург, Росcия"><span>Санкт-Петербург, <span>Росcия</span></span></div>
-                      <div class="ui-dropdown__select__option" data-value="Санкт-Петербург, Росcия"><span>Санкт-Петербург, <span>Росcия</span></span></div>
-                      <div class="ui-dropdown__select__option" data-value="Санкт-Петербург, Росcия"><span>Санкт-Петербург, <span>Росcия</span></span></div>
+                  <div class="ui-dropdown ui-dropdown--city">
+                    <div class="ui-dropdown__visible ui-dropdown__visible--city"><span>0</span>
+                      <input id="cityAutocompleate" type="text" placeholder="Город"><i class="ico ico-location"></i>
                     </div>
                   </div>
                   <div class="ui-dropdown ui-dropdown--short">
@@ -208,10 +208,16 @@
             <div class="articles__right">
               <div class="heading">Почитать</div>
               <div class="heading-line"><i class="ico ico-read"></i></div>
-              <div class="articles__slider">
-                <div class="article">
-                  <div class="article__name">Название статьи</div>
-                  <div class="article__content">Отношения по расчету помогают мужчинам расслабиться от изматывающей работы и помогают в тех случаях, когда на другие отношения просто не хватает времени.</div><a class="btn btn--blue" href="#">Читать дальше</a>
+              <div class="articles__slider"><i class="ico ico-prev"></i><i class="ico ico-next"></i>
+                <div id="lightSlider">
+                  <div class="article">
+                    <div class="article__name">Название статьи</div>
+                    <div class="article__content">Отношения по расчету помогают мужчинам расслабиться от изматывающей работы и помогают в тех случаях, когда на другие отношения просто не хватает времени.</div><a class="btn btn--blue" href="#">Читать дальше</a>
+                  </div>
+                  <div class="article">
+                    <div class="article__name">Название статьи</div>
+                    <div class="article__content">Отношения по расчету помогают мужчинам расслабиться от изматывающей работы и помогают в тех случаях, когда на другие отношения просто не хватает времени.</div><a class="btn btn--blue" href="#">Читать дальше</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -227,6 +233,8 @@
       </div>
     </footer>
     <!-- SCRIPTS-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
   </body>

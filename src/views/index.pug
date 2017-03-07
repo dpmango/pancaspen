@@ -85,17 +85,11 @@ html
                       .ui-dropdown__select__option(data-value="Мужчину")
                         i.ico.ico-drop-man
                         span Мужчину
-                  .ui-dropdown
-                    .ui-dropdown__visible
-                      span Город
+                  .ui-dropdown.ui-dropdown--city
+                    .ui-dropdown__visible.ui-dropdown__visible--city
+                      span 0
+                      input#cityAutocompleate(type="text" placeholder="Город")
                       i.ico.ico-location
-                    .ui-dropdown__select.ui-dropdown__select--regions
-                      .ui-dropdown__select__option(data-value="Санкт-Петербург, Росcия")
-                        span Санкт-Петербург, <span>Росcия</span>
-                      .ui-dropdown__select__option(data-value="Санкт-Петербург, Росcия")
-                        span Санкт-Петербург, <span>Росcия</span>
-                      .ui-dropdown__select__option(data-value="Санкт-Петербург, Росcия")
-                        span Санкт-Петербург, <span>Росcия</span>
 
                   .ui-dropdown.ui-dropdown--short
                     .ui-dropdown__visible
@@ -310,9 +304,16 @@ html
                 i.ico.ico-read
 
               .articles__slider
-                .article
-                  .article__name Название статьи
-                  .article__content Отношения по расчету помогают мужчинам расслабиться от изматывающей работы и помогают в тех случаях, когда на другие отношения просто не хватает времени.
-                  a(href="#").btn.btn--blue Читать дальше
+                i.ico.ico-prev
+                i.ico.ico-next
+                #lightSlider
+                  .article
+                    .article__name Название статьи
+                    .article__content Отношения по расчету помогают мужчинам расслабиться от изматывающей работы и помогают в тех случаях, когда на другие отношения просто не хватает времени.
+                    a(href="#").btn.btn--blue Читать дальше
+                  .article
+                    .article__name Название статьи
+                    .article__content Отношения по расчету помогают мужчинам расслабиться от изматывающей работы и помогают в тех случаях, когда на другие отношения просто не хватает времени.
+                    a(href="#").btn.btn--blue Читать дальше
 
     include shared/footer.pug

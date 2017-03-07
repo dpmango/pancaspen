@@ -20,6 +20,7 @@ var vmin          = require('postcss-vmin');
 var will_change   = require('postcss-will-change');
 var flexbugs      = require('postcss-flexbugs-fixes');
 var cssnano       = require('cssnano');
+var csso          = require('postcss-csso');
 var spritesmith   = require('gulp.spritesmith');
 var sass          = require('gulp-sass');
 var sassGlob      = require('gulp-sass-glob');
@@ -56,6 +57,7 @@ gulp.task('build', function (callback) {
     'pug',
     'postcss',
     ['useref', 'images', 'fonts'],
+    'csso',
     callback
   )
 })
@@ -150,6 +152,15 @@ gulp.task('cssnano', function () {
         keyframes: false
       }
     })]) )
+    .pipe(rename({ extname: '.min.css' }))
+    .pipe(gulp.dest('dist/css'));;
+});
+
+gulp.task('csso', function () {
+  return gulp.src('./dist/css/styles.css')
+    .pipe( postcss([
+      csso({ restructure: false })
+    ]) )
     .pipe(rename({ extname: '.min.css' }))
     .pipe(gulp.dest('dist/css'));;
 });

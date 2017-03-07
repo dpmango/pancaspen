@@ -7,10 +7,14 @@ header.header
     .header__logo
       a(href="#") Pancaspen.ru
     .header__navi
-      .header__navi__item.header__place Ваша анкета на <span>27 месте</span> <a href='#'>поднять</a>
-      a(href='#').header__navi__item.header__payed
+      .header__navi__item.header__place
+        | Ваша анкета на <span>27 месте</span> <a href='#'>поднять</a>
+      .header__navi__item.header__payed
         i.ico.ico-crown
         span 23 дня
+        .header__payed__drop
+          .header__payed__drop__wrap
+            a(href="#") Продлить
       a(href='#').header__navi__item.header__notification
         i.ico.ico-eye
       a(href='#').header__navi__item.header__messages
