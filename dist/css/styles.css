@@ -922,6 +922,12 @@ body, html {
         pointer-events: all;
     }
 }
+@media(max-width: 568px) {
+    .app .sidebar {
+        -webkit-transform: translate3d(-270px,0,0);
+                transform: translate3d(-270px,0,0);
+    }
+}
 
 /* 2. Elements */
 /* ICONS */
@@ -1542,6 +1548,8 @@ body, html {
 }
 @media(max-width: 568px) {
     .header__login {
+        padding-right: 15px;
+        padding-left: 15px;
         font-size: 13px;
     }
 }
@@ -1582,6 +1590,9 @@ body, html {
     display: block;
     margin-top: 5px;
     font-size: 21px;
+}
+.hero__title span br {
+    display: none;
 }
 .hero__form {
     margin-top: 25px;
@@ -1674,16 +1685,33 @@ body, html {
 @media(max-width: 568px) {
     .hero {
         margin-top: 50px;
+        min-height: 430px;
         background: url('../images/heroMobile.png') no-repeat center;
+        background-size: cover;
     }
     .hero__wrapper {
-        padding-top: 25px;
+        padding-top: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
+        min-height: 430px;
     }
     .hero__title {
-        font-size: 32px;
+        font-weight: 700;
+        font-size: 26px;
     }
     .hero__title span {
+        margin-top: 10px;
+        font-weight: 600;
         font-size: 15px;
+    }
+    .hero__title span br {
+        display: inline-block;
+    }
+    .hero__form {
+        margin-top: 15px;
+    }
+    .hero__cta {
+        margin-top: 10px;
     }
 }
 /* LISTINGS */
@@ -1807,6 +1835,12 @@ body, html {
     padding-right: 15px;
     padding-left: 15px;
     max-width: 570px;
+}
+@media(max-width: 568px) {
+    .about p {
+        font-size: 13px;
+        line-height: 22px;
+    }
 }
 /* ARTICLES */
 .articles .heading-line {
@@ -2150,6 +2184,14 @@ body, html {
 .sidebar__menu__link:hover:not(.sidebar__menu__link--muted) {
     background: #f4f7fb;
 }
+@media(max-width: 568px) {
+    .sidebar {
+        width: 270px;
+    }
+    .sidebar__menu {
+        min-height: 530px;
+    }
+}
 /* UI */
 .ui-group {
     display: -webkit-box;
@@ -2341,12 +2383,27 @@ body, html {
         width: calc(50% - 2px);
     }
 }
+@media(max-width: 568px) {
+    .ui-dropdown {}
+    .ui-dropdown__visible {
+        padding: 16px 15px 16px 25px;
+        background: white;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
 .heading {
     padding-top: 45px;
     padding-bottom: 20px;
     text-align: center;
     font-weight: 600;
     font-size: 30px;
+}
+@media(max-width: 568px) {
+    .heading {
+        padding-top: 30px;
+        font-size: 26px;
+    }
 }
 .heading-line {
     text-align: center;

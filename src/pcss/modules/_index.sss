@@ -142,6 +142,8 @@
     @media(width <= 1150px)
       display: flex
     @media($mobile)
+      padding-left: 15px
+      padding-right: 15px
       font-size: 13px
 
 // HERO
@@ -165,6 +167,8 @@
       margin-top: 5px
       display: block
       font-size: 21px
+      br
+        display: none
   &__form
     margin-top: 25px
   &__cta
@@ -229,12 +233,27 @@
   .hero
     margin-top: 50px
     background: url('../images/heroMobile.png') no-repeat center
+    background-size: cover
+    min-height: 430px
     &__wrapper
-      padding-top: 25px
+      padding-top: 15px
+      padding-left: 10px
+      padding-right: 10px
+      min-height: 430px
     &__title
-      font-size: 32px
+      font-size: 26px
+      font-weight: 700
       span
         font-size: 15px
+        font-weight: 600
+        margin-top: 10px
+        br
+          display: inline-block
+    &__form
+      margin-top: 15px
+    &__cta
+      margin-top: 10px
+
 // LISTINGS
 .listings
   padding-bottom: 30px
@@ -320,6 +339,11 @@
   .btn
     padding-top: 14px
 
+@media($mobile)
+  .about
+    p
+      font-size: 13px
+      line-height: 22px
 // ARTICLES
 .articles
   &__wrapper
@@ -541,8 +565,11 @@
 
 
 
-
-
+@media($mobile)
+  .sidebar
+    width: 270px
+    &__menu
+      min-height: 530px
 
 
 
@@ -690,6 +717,14 @@
     .ui-dropdown__visible
       border-radius: 4px
 
+@media($mobile)
+  .ui-dropdown
+    &__visible
+      padding: 16px 15px 16px 25px
+      background: white
+      cursor: pointer
+      font-size: 14px
+
 
 .heading
   font-size: 30px
@@ -697,6 +732,9 @@
   text-align: center
   padding-top: 45px
   padding-bottom: 20px
+  @media($mobile)
+    font-size: 26px
+    padding-top: 30px
 
   &-line
     text-align: center

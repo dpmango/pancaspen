@@ -50,7 +50,7 @@ body, html
 
 .text-center
   text-align: center
-  
+
 .app
   .content
     transition: transform .5s ease
@@ -83,3 +83,8 @@ body, html
         &::after
           background: color(black a(50%))
           pointer-events: all
+
+@media($mobile)
+  .app
+    .sidebar
+      transform: translate3d(-270px,0,0)
